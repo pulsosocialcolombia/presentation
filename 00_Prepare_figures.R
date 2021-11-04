@@ -11,7 +11,7 @@ codvars <-  read_sheet(dic_map, sheet = "Vars", col_names = TRUE)
 # for (i in c(320:331)){
 for (i in codvars$var_id) {
 
-  # i <- 309
+  # i <- 46
   # graph options
   w <- 7*1.5
   h <- 4*1.5
@@ -27,8 +27,16 @@ for (i in codvars$var_id) {
   }
 
   #### Static
+  niveles <- c("etnia", "gen", "edad", "grupo", "tipo")
+  niv <- gsub(".*_", "", unique(d$id_nivel))
+  
+  if(str_detect(niv, paste(niveles, collapse = "|"))){
+    fl <- paste0(here(),"/img/","var_",d$var_id,"_static",".png", sep="")
+    try(ggsave(fl,print(pulso_static(i,"print")), dpi = dpi*1.2, width = w*1.2, height = h*1.3))
+  } else {
     fl <- paste0(here(),"/img/","var_",d$var_id,"_static",".png", sep="")
     try(ggsave(fl,print(pulso_static(i,"print")),dpi = dpi, width = w, height = h))
+  }
 
   #### Map
     if (d$fig_map==1) {
