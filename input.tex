@@ -1,0 +1,75 @@
+
+    %%% Packages 
+    \usepackage{etoolbox}
+    \usepackage{environ}
+    \usepackage{xcolor}
+
+
+
+    %%%%-----------------------------------_
+    %%%%%% ---- Settting for all frames
+    %%%%-----------------------------------_
+    \BeforeBeginEnvironment{frame}{%
+        \normalsize%
+        \normalcolor%
+    }
+    
+        %%%%% ----- Get rid of the Bottons
+        %gets rid of bottom navigation bars
+        \setbeamertemplate{footline}[frame number]{}
+        
+        %gets rid of bottom navigation symbols
+        \setbeamertemplate{navigation symbols}{}
+        
+        %gets rid of footer
+        %will override 'frame number' instruction above
+        %comment out to revert to previous/default definitions
+        \setbeamertemplate{footline}{}
+    
+    %%%% Margins
+    \setbeamersize{text margin left=0mm,text margin right=0mm} 
+    
+    %%%% Points
+    \definecolor{mypink1}{rgb}{0.858, 0.188, 0.478}
+    \setbeamercolor{itemize item}{fg=mypink1} % all frames will have red bullets
+
+    %%%%-----------------------------------_
+    %%%%%% ---- Layouts Slides
+    %%%%-----------------------------------_
+    
+    
+    %%%%%% Set the text
+    \makeatletter
+        \NewEnviron{imagecolumn}{\expandafter\gdef\expandafter\imagecolcontent\expandafter{\BODY}}
+        \NewEnviron{textcolumn}{\expandafter\gdef\expandafter\textcolcontent\expandafter{\BODY}}
+        \newcommand{\printcolumns}{%
+          \begin{columns}[T]
+                \begin{column}{.3\textwidth}
+                \textcolcontent
+              \end{column}
+              \begin{column}{.6\textwidth}
+                \imagecolcontent
+              \end{column}
+            \end{columns}
+        }
+    \makeatother
+
+    
+      
+    %%%% Slide
+    \newenvironment{slide}[1]
+    {
+     \usebackgroundtemplate{\includegraphics[width=\paperwidth]{backs/#1.png}}%
+     \begin{frame}[plain]
+    }
+    { 
+    \end{frame}
+    }
+    
+    %%%% Titulos
+    \newcommand{\slidetitle}[1]{
+     \begin{slide}{#1}
+        \end{slide}
+    }
+    
+    
