@@ -37,14 +37,14 @@
             \input{sty/01_autores}
             \clearpage
 
-
           % Sumarios
             \vspace{1cm}
             \tableofcontents
-
             \clearpage
+            
             \vspace{1cm}
             \listoffigures
+            \clearpage
 
             \vspace{1cm}
             \listoftables
@@ -56,26 +56,29 @@
           % -----------------------------------------------------------------------------
           \input{sty/02_Introduccion}
           \clearpage
+          \newpage
           
           \pagestyle{modal}
- 
-           \input{reporte_partes/00_Introduccion}
-           
+          \input{reporte_partes/00_Introduccion}
+           \clearpage
         % ------------------------------------------------------------------------------
           % - Contexto
           % -----------------------------------------------------------------------------
           \input{sty/03_Contexto}
           \clearpage
+          \newpage
           
           \pagestyle{modal}
  
            \input{reporte_partes/02_Contexto}
+           \clearpage
            
             % ------------------------------------------------------------------------------
           % - Resultados
           % -----------------------------------------------------------------------------
           \input{sty/04_Resultado}
           \clearpage
+          \newpage
         
           
           \pagestyle{modal}
@@ -107,31 +110,14 @@
 
           % Glossário
             %\glossary              % Consulte o manual da classe abntex2 para orientações sobre o glossário.
-
-\end{document}
-
-
-          % Anexos
+            
+            
+             % Anexos
              \part*{Anexos}
              \begin{anexosenv}
              
-             \chapter{Recursos recomendados para el primer semestre}\label{anex:anexo1}
-                \input{anexos/anexo_Libros_Recomendados.tex}
-                
-
-            \chapter{Recursos para la preparación Examén Comprensivo de Fundamentación}\label{anex:anexo2}
-                \input{anexos/anexo_hitos_fundamentacion}
-                
-            \chapter{Formato para el prestado portatiles}\label{anex:portatiles}
-                \includepdf[pages=-]{formatos/Formato_01_PrestamoPortatiles.pdf}
-                
-            \chapter{Formato para la solicitud de la pasantía }\label{anex:pasantia}
-                \includepdf[pages=-]{formatos/Formato_02_PlanPasantias.pdf}
-                
-             \chapter{Formato de aval de la propuesta de tesis }\label{anex:pasantia}
-                \includepdf[pages=-]{formatos/Formato_03_AvalPropuesta.pdf}
-
-
+             \chapter{Protocolo de Manejo de Datos - Pulso Social}\label{anex:anexo1}
+                \input{anexos/A1_protocolo_datos}
              \end{anexosenv}
 
           % Índice remissimo
@@ -141,3 +127,13 @@
 
 %    \end{sloppypar}
 \end{document}
+
+
+
+                
+
+\end{document}
+
+
+         
+            
