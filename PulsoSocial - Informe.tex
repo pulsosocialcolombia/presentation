@@ -1,0 +1,151 @@
+\documentclass[11pt,oneside,a4paper,english,french,spanish,brazil]{abntex2}
+
+% ----------------------------------------------------------------------------------------
+% - Librerias
+  \usepackage{sty/modal_configs}    % Pacotes utilizados
+  \usepackage{sty/datos_portada}       % Definições de layout do documento
+  \usepackage{sty/modal_dados}              % Dados do INOVA
+   \usepackage{sty/modal_vocabulario}              % Vocabulário específico do projeto
+  \usepackage{sty/modal_leiaute_rt}               % Definições de layout do documento
+
+% ----------------------------------------------------------------------------------------
+% - INICIO
+  \begin{document}
+%      \begin{sloppypar}
+
+          % Seleciona o idioma do documento (conforme pacotes do babel)
+            \selectlanguage{spanish}
+
+          % Retira espaço extra obsoleto entre as frases.
+            \frenchspacing
+
+          % ------------------------------------------------------------------------------
+          % - ESTRUTURA DO DOCUMENTO
+          % ------------------------------------------------------------------------------
+          % ------------------------------------------------------------------------------
+          % - PRÉ-TEXTUAL
+          % ------------------------------------------------------------------------------
+          \pagestyle{modalpre}
+
+          % Portada
+            \input{portada/portada}
+            \clearpage
+
+          % Metadata
+            \input{portada/revisoes}
+            \clearpage
+     
+
+          % Sumarios
+            \vspace{1cm}
+            \tableofcontents
+
+            \clearpage
+            \vspace{1cm}
+            \listoffigures
+
+            \vspace{1cm}
+            \listoftables
+
+            \clearpage
+  
+          % ------------------------------------------------------------------------------
+          % - TEXTUAL
+          % ------------------------------------------------------------------------------
+          \pagestyle{modal}
+
+
+
+\end{document}
+
+          % Introducción
+            \chapter{Introducción}\label{cap:introducao}
+            \input{textual/00_Introduccion}
+  
+          % Problema
+            \chapter{Modelo de Desarrollo de Competencias (MDC)}\label{cap:mdc}
+            \input{textual/01_MDC}
+
+          % Estructura Curricular
+            \chapter{Estructura Curricular}\label{cap:justificativa}
+            \input{textual/02_Estructura_Curricular}
+            
+            % Estructura Curricular
+            \chapter{Profesores}\label{cap:justificativa}
+            \input{textual/03_Profesores}
+
+%%%% - Hitos del Doctorado
+          % Hito 1: Examen Comprensivo
+            \chapter{Hito 1: Examen Comprensivo de Fundamentación}\label{cap:introducao}
+            \input{textual/hito1_examenfundamentacion}
+            
+        % Hito 2: Examen Comprensivo
+            \chapter{Hito 2: Examen Comprensivo de Profundización}\label{cap:introducao}
+            \input{textual/hito2_examenprofundizacion}
+           
+        % Hito 3: Candidatura Doctoral
+            \chapter{Hito 3: Candidatura Doctoral (Propuesta de Tesis)}\label{cap:introducao}
+            \input{textual/hito3_propuestatesis}
+            
+        % Hito 4: Seminarios Doctorales
+            \chapter{Hito 4: Seminarios Doctorales}\label{cap:introducao}
+            \input{textual/hito4_seminariosdoctorales}
+            
+        % Hito 5: Pasantía
+        \chapter{Hito 5: Pasantía de investigación o académicas}\label{cap:introducao}
+        \input{textual/hito5_pasantia}
+            
+        % Hito 6: Defensa de Tesis
+        \chapter{Hito 6: Defensa de Tesis}\label{cap:introducao}
+            \input{textual/hito6_DefensaTesis}
+ 
+        % Cronograma
+        \chapter{Reporte de Avance Disertación}\label{cap:cronograma}
+        \input{textual/04_Disertaciones}
+
+        % Administrativos
+        \chapter{Preguntas Frecuentes}\label{cap:inovacao}
+        \input{textual/05_Otros}
+
+          % ------------------------------------------------------------------------------
+          % - PÓS-TEXTUAL
+          % ------------------------------------------------------------------------------
+          \pagestyle{modalpre}
+
+          % Referências bibliográficas
+            \clearpage
+            \bibliography{bib/ppi}
+
+          % Glossário
+            %\glossary              % Consulte o manual da classe abntex2 para orientações sobre o glossário.
+
+          % Anexos
+             \part*{Anexos}
+             \begin{anexosenv}
+             
+             \chapter{Recursos recomendados para el primer semestre}\label{anex:anexo1}
+                \input{anexos/anexo_Libros_Recomendados.tex}
+                
+
+            \chapter{Recursos para la preparación Examén Comprensivo de Fundamentación}\label{anex:anexo2}
+                \input{anexos/anexo_hitos_fundamentacion}
+                
+            \chapter{Formato para el prestado portatiles}\label{anex:portatiles}
+                \includepdf[pages=-]{formatos/Formato_01_PrestamoPortatiles.pdf}
+                
+            \chapter{Formato para la solicitud de la pasantía }\label{anex:pasantia}
+                \includepdf[pages=-]{formatos/Formato_02_PlanPasantias.pdf}
+                
+             \chapter{Formato de aval de la propuesta de tesis }\label{anex:pasantia}
+                \includepdf[pages=-]{formatos/Formato_03_AvalPropuesta.pdf}
+
+
+             \end{anexosenv}
+
+          % Índice remissimo
+            \printindex
+
+
+
+%    \end{sloppypar}
+\end{document}
