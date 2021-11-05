@@ -2,11 +2,13 @@
 
 % ----------------------------------------------------------------------------------------
 % - Librerias
-  \usepackage{sty/modal_configs}    % Pacotes utilizados
-  \usepackage{sty/datos_portada}       % Definições de layout do documento
-  \usepackage{sty/modal_dados}              % Dados do INOVA
-   \usepackage{sty/modal_vocabulario}              % Vocabulário específico do projeto
-  \usepackage{sty/modal_leiaute_rt}               % Definições de layout do documento
+  \usepackage{sty/modal_configs}    
+  \usepackage{sty/datos_portada}      
+  \usepackage{sty/modal_dados}              
+   \usepackage{sty/modal_vocabulario}         
+  \usepackage{sty/modal_leiaute_rt} 
+
+
 
 % ----------------------------------------------------------------------------------------
 % - INICIO
@@ -28,11 +30,11 @@
           \pagestyle{modalpre}
 
           % Portada
-            \input{portada/portada}
+            \input{sty/00_portada}
             \clearpage
 
           % Metadata
-            \input{portada/revisoes}
+            \input{sty/01_autores}
             \clearpage
 
 
@@ -50,62 +52,49 @@
             \clearpage
   
           % ------------------------------------------------------------------------------
-          % - TEXTUAL
-          % ------------------------------------------------------------------------------
+          % - Introducción
+          % -----------------------------------------------------------------------------
+          \input{sty/02_Introduccion}
+          \clearpage
+          
           \pagestyle{modal}
-
-
-
-\end{document}
-
-          % Introducción
-            \chapter{Introducción}\label{cap:introducao}
-            \input{textual/00_Introduccion}
-  
-          % Problema
-            \chapter{Modelo de Desarrollo de Competencias (MDC)}\label{cap:mdc}
-            \input{textual/01_MDC}
-
-          % Estructura Curricular
-            \chapter{Estructura Curricular}\label{cap:justificativa}
-            \input{textual/02_Estructura_Curricular}
-            
-            % Estructura Curricular
-            \chapter{Profesores}\label{cap:justificativa}
-            \input{textual/03_Profesores}
-
-%%%% - Hitos del Doctorado
-          % Hito 1: Examen Comprensivo
-            \chapter{Hito 1: Examen Comprensivo de Fundamentación}\label{cap:introducao}
-            \input{textual/hito1_examenfundamentacion}
-            
-        % Hito 2: Examen Comprensivo
-            \chapter{Hito 2: Examen Comprensivo de Profundización}\label{cap:introducao}
-            \input{textual/hito2_examenprofundizacion}
-           
-        % Hito 3: Candidatura Doctoral
-            \chapter{Hito 3: Candidatura Doctoral (Propuesta de Tesis)}\label{cap:introducao}
-            \input{textual/hito3_propuestatesis}
-            
-        % Hito 4: Seminarios Doctorales
-            \chapter{Hito 4: Seminarios Doctorales}\label{cap:introducao}
-            \input{textual/hito4_seminariosdoctorales}
-            
-        % Hito 5: Pasantía
-        \chapter{Hito 5: Pasantía de investigación o académicas}\label{cap:introducao}
-        \input{textual/hito5_pasantia}
-            
-        % Hito 6: Defensa de Tesis
-        \chapter{Hito 6: Defensa de Tesis}\label{cap:introducao}
-            \input{textual/hito6_DefensaTesis}
  
-        % Cronograma
-        \chapter{Reporte de Avance Disertación}\label{cap:cronograma}
-        \input{textual/04_Disertaciones}
+           \input{reporte_partes/00_Introduccion}
+           
+        % ------------------------------------------------------------------------------
+          % - Contexto
+          % -----------------------------------------------------------------------------
+          \input{sty/03_Contexto}
+          \clearpage
+          
+          \pagestyle{modal}
+ 
+           \input{reporte_partes/02_Contexto}
+           
+            % ------------------------------------------------------------------------------
+          % - Resultados
+          % -----------------------------------------------------------------------------
+          \input{sty/04_Resultado}
+          \clearpage
+        
+          
+          \pagestyle{modal}
+ 
+           \input{reporte_partes/03_Resultado}
+           \clearpage
+           
+            % ------------------------------------------------------------------------------
+          % - Conclusiones
+          % -----------------------------------------------------------------------------
+          \input{sty/05_Conclusiones}
+          \clearpage
+          
+          \pagestyle{modal}
+           \input{reporte_partes/04_Conclusiones}
+           \clearpage
 
-        % Administrativos
-        \chapter{Preguntas Frecuentes}\label{cap:inovacao}
-        \input{textual/05_Otros}
+
+
 
           % ------------------------------------------------------------------------------
           % - PÓS-TEXTUAL
@@ -114,10 +103,13 @@
 
           % Referências bibliográficas
             \clearpage
-            \bibliography{bib/ppi}
+            \bibliography{references.bib}
 
           % Glossário
             %\glossary              % Consulte o manual da classe abntex2 para orientações sobre o glossário.
+
+\end{document}
+
 
           % Anexos
              \part*{Anexos}
