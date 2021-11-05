@@ -1,0 +1,203 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% File      : modal_configs.sty
+% Type      : TeX
+% Versão    : 1.0
+%
+% Content   : Formatos del Documento en general
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%
+%---------------------------------------------------------------------
+
+% ----------------------------------------------------------------------------------------
+% - PACOTES FUNDAMENTAIS
+%  \usepackage[a-1b]{pdfx}                   % Gerar PDF/A (deve vir antes do pacote \hyperef)
+%  \usepackage{lmodern}                      % Usa a fonte Latin Modern
+%  \usepackage[math]{kurier}
+%  \usepackage[default]{mintspirit}
+  \usepackage[default,
+              scale=0.95]{opensans}         % Usa a fonte Open Sans
+%  \usepackage[default]{lato}                % Usa a fonte Lato
+  \usepackage[T1]{fontenc}                  % Selecao de codigos de fonte.
+  \usepackage{cmap}                         % Acentuação correta no pdf
+
+    \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}           % Codificacao do documento (conversão automática dos acentos)
+  \usepackage{indentfirst}                  % Indenta o primeiro parágrafo de cada seção.
+  \usepackage[usenames,
+              dvipsnames]{color}            % Letras coloridas
+  \usepackage[usenames,
+              dvipsnames,
+              svgnames,
+              table]{xcolor}                % Mais letras coloridas
+  \usepackage{graphicx}                     % Inclusão de gráficos
+  \usepackage{amsmath,
+              amssymb,
+              amsfonts,
+              textcomp}                     % Essencial para colocar funções e outros símbolos matemáticos
+  \usepackage{microtype}                    % Para melhorias de justificação
+  \usepackage{lscape}                       % Páginas em orientação paisagem
+  \usepackage{lastpage}                     % Identifica a numeração da última página do documento
+  \usepackage{booktabs}                     % Melhora a qualidade das tabelas
+  \usepackage{multicol}                     % Permite multiplas colunas
+  \usepackage{multirow}                     % Tabelas em múltiplas linhas
+  \usepackage{longtable}                    % Tabelas em múltiplas páginas
+  \usepackage{float}                        % Melhora a flutuação de objetos
+  \usepackage{pdfpages}                     % Permite incluir arquivos PDF no documento
+  \usepackage{tikz}                         % Para desenhos, traços, linhas etc.
+  \usepackage[export]{adjustbox}            % Para desenhar frame ao redor das figuras
+  \usepackage{verbatim}                     % Para citação não formatada de código fonte
+  \usepackage{enumerate}                    % Mais opções e simplicidade para o ambiente Enumerate
+%  \usepackage[english,brazil]{babel}        % Múltiplas línguas
+  \usepackage{hyperref}
+  \usepackage[brazilian,
+              hyperpageref]{backref}        % Paginas com as citações na bibl
+  \usepackage[alf]{abntex2cite}             % Citações padrão ABNT (desnecessário se usar a classe abntex2)
+  \usepackage{wallpaper}                    % Para incluir marca d'água
+  \usepackage{paracol}                      % Múltiplas colunas de texto
+  \usepackage{abntex2cite}                  % Normas ABNT para referências bibliográficas
+  \usepackage{lipsum}                       % para texto de preenchimento de exemplo
+  \usepackage{pgfgantt}                     % para criação de Gantt Charts
+  \usepackage{array}                        % para definir novos tipos de alinhamento de célula em tabelas
+      \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+      \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+      \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% ----------------------------------------------------------------------------------------
+
+% ----------------------------------------------------------------------------------------
+% - CONFIGURAÇÕES DE PACOTES
+  % Configurações do pacote backref
+  % Usado sem a opção hyperpageref de backref
+    \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+    % Texto padrão antes do número das páginas
+    \renewcommand{\backref}{}
+    % Define os textos da citação
+    \renewcommand*{\backrefalt}[4]{
+      \ifcase #1 %
+        Nenhuma citação no texto.%
+      \or
+        Citado na página #2.%
+      \else
+        Citado #1 vezes nas páginas #2.%
+      \fi
+    }%
+
+  % Configurações de aparência do PDF final
+    % Alterando o aspecto da cor azul
+%      \definecolor{blue}{RGB}{41,5,195}
+      \definecolor{blue}{RGB}{0, 0, 77}
+
+    % Informações do PDF
+      \makeatletter
+      \hypersetup{
+          %pagebackref=true,
+          colorlinks=true,          % false: boxed links; true: colored links
+          linkcolor=blue,           % color of internal links
+          citecolor=blue,           % color of links to bibliography
+          filecolor=magenta,          % color of file links
+          urlcolor=blue,
+          bookmarksdepth=4
+      }
+      \makeatother
+
+  % Espaçamentos entre linhas e parágrafos
+    % O tamanho do parágrafo é dado por:
+      \setlength{\parindent}{1.3cm}
+
+    % Controle do espaçamento entre um parágrafo e outro:
+      \setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+  % Compila o index
+    \makeindex
+
+  % Definição de posicionamento da marca d'agua do CPAI
+    \newcommand{\placetextbox}[3]{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+        \setbox0=\hbox{#3}% Put <stuff> in a box
+        \AddToShipoutPictureFG{% Add <stuff> to current page foreground
+            \put(\LenToUnit{#1\paperwidth},\LenToUnit{#2\paperheight}){\vtop{{\null}\makebox[0pt][c]{#3}}}%
+        }%
+    }%
+
+  % Troca o símbolo do itemize para um '--'
+    \renewcommand{\labelitemi}{--}
+
+  % Novo comando para citar ANEXOS
+    \newcommand{\refanexo}[1]{\hyperref[#1]{Anexo~\ref{#1}}}
+
+  % Nova linha horizontal
+    \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+  % Numeros ordinais
+    \newcommand{\ele}{\raise1ex\hbox{\underbar{\tiny o}}}
+    \newcommand{\ela}{\raise1ex\hbox{\underbar{\tiny a}}}
+
+  % Para desenhar linha diagonal até o fim da página
+    \newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+  
+  % Cores Modal
+    \definecolor{modalorange}{RGB}{255, 153, 0}
+    \definecolor{modalblue}{RGB}{0, 0, 77}
+
+% ----------------------------------------------------------------------------------------
+    \usepackage{pgf,pgffor}
+    \newcommand{\ImageWidth}{11cm}
+    \usepackage{tikz}
+    \usetikzlibrary{decorations.pathreplacing,positioning, arrows.meta}
+    
+    
+    
+    %%-- BOXES 
+    \usepackage{environ}
+\usepackage{xcolor}
+\usepackage[tikz]{bclogo}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{lipsum}
+
+\NewEnviron{myremark}[1]
+  {\par\medskip\noindent
+  \begin{tikzpicture}
+    \node[inner sep=0pt] (box) {\parbox[t]{.99\textwidth}{%
+      \begin{minipage}{.3\textwidth}
+      \centering\tikz[scale=5]\node[scale=3,rotate=30]{\bclampe};
+      \end{minipage}%
+      \begin{minipage}{.65\textwidth}
+      \textbf{#1}\par\smallskip
+      \BODY
+      \end{minipage}\hfill}%
+    };
+    \draw[red!75!black,line width=3pt] 
+      ( $ (box.north east) + (-5pt,3pt) $ ) -- ( $ (box.north east) + (0,3pt) $ ) -- ( $ (box.south east) + (0,-3pt) $ ) -- + (-5pt,0);
+    \draw[red!75!black,line width=3pt] 
+      ( $ (box.north west) + (5pt,3pt) $ ) -- ( $ (box.north west) + (0,3pt) $ ) -- ( $ (box.south west) + (0,-3pt) $ ) -- + (5pt,0);
+  \end{tikzpicture}\par\medskip%
+}
+
+    %%% OTher
+    \usepackage{keyval,caption,subfig}
+    \captionsetup[subfigure]{format=hang, singlelinecheck=false, font={tt,bf,sc}}
+
+    %%% Other 
+    \usepackage{tikz,lipsum,lmodern}
+    \usepackage[most,breakable]{tcolorbox}
+    \usepackage{multicol}
+    
+    %%% Colors
+    \definecolor{A}{RGB}{0,163,243}
+    \definecolor{B}{RGB}{0,163,243}
+    \definecolor{C}{RGB}{0,163,243}
+    \definecolor{D}{RGB}{0,163,243}
+    
+    %%% Tablas from CSV
+    \usepackage{booktabs} % For \toprule, \midrule and \bottomrule
+    \usepackage{siunitx} % Formats the units and values
+    \usepackage{pgfplotstable} % Generates table from .csv
+    \usepackage{csvsimple}
+    \usepackage{longtable}
+    
+    \DeclareUnicodeCharacter{FEFF}{}
+    
+    \usepackage{pdfpages}
+
+    
+
