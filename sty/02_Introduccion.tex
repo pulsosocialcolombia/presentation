@@ -1,0 +1,28 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% File  : capa
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% Limpa os estilos de página
+  \thispagestyle{empty}
+
+% Desenho no fundo da página
+  \ThisCenterWallPaper{1}{sty/pulso_titulos.pdf}
+
+% Cria uma mini-página para inserir os dados da capa usando 70% da largura do texto
+    \begin{minipage}{0.85\textwidth}
+    \end{minipage}%
+
+    \vspace{14cm}
+    \begin{minipage}{0.85\textwidth}
+      \begin{center}
+          % Rodapé da capa
+          \sffamily
+          
+          \rule{\textwidth}{0.2mm}
+          \chapter{Introducción}
+%          Orientador: \textbf{\Orientador} \\[-0.2cm]
+          \rule{\textwidth}{0.2mm}\\
+      \end{center}
+    \end{minipage}%
+    
+
