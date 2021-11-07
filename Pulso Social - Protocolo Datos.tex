@@ -1,0 +1,61 @@
+\documentclass[11pt,oneside,a4paper,english,french,spanish,brazil]{abntex2}
+
+% ----------------------------------------------------------------------------------------
+% - Librerias
+  \usepackage{sty/modal_configs}    
+  \usepackage{sty/datos_portada}      
+  \usepackage{sty/modal_dados}              
+   \usepackage{sty/modal_vocabulario}         
+  \usepackage{sty/modal_leiaute_rt} 
+
+
+
+% ----------------------------------------------------------------------------------------
+% - INICIO
+  \begin{document}
+%      \begin{sloppypar}
+
+          % Seleciona o idioma do documento (conforme pacotes do babel)
+            \selectlanguage{spanish}
+
+          % Retira espaço extra obsoleto entre as frases.
+            \frenchspacing
+
+          % ------------------------------------------------------------------------------
+          % - ESTRUTURA DO DOCUMENTO
+          % ------------------------------------------------------------------------------
+          % ------------------------------------------------------------------------------
+          % - PRÉ-TEXTUAL
+          % ------------------------------------------------------------------------------
+          \pagestyle{modalpre}
+
+          % Portada
+            \input{sty/00_portada_datos}
+            \clearpage
+
+          % Metadata
+            \input{sty/01_autores}
+            \clearpage
+
+          % ------------------------------------------------------------------------------
+          % - Introducción
+          % -----------------------------------------------------------------------------
+
+          \chapter{Protocolo de datos Pulso Social}
+          \pagestyle{modal}
+          \input{anexos/A1_protocolo_datos}
+           \clearpage
+        
+
+%    \end{sloppypar}
+\end{document}
+
+
+
+                
+
+\end{document}
+
+
+         
+            
