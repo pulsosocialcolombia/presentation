@@ -8,7 +8,7 @@ dic_map <-"https://docs.google.com/spreadsheets/d/1ZEqO-bYWPYixr2xI6fNeW4MCEeyZY
 #### Get the file
 codvars <-  read_sheet(dic_map, sheet = "Vars", col_names = TRUE)
 
-# for (i in c(320:331)){
+# for (i in c(286)){
 for (i in codvars$var_id) {
 
   # i <- 46
