@@ -3,15 +3,31 @@
 
 \section{Ingreso Familiar}
 
-            \begin{itemize}
+    %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+
+                    \begin{itemize}
                     \item Pero hay una brecha de género enorme, especialmente en los percentiles más bajos de ingreso.
                     \item El rezago en el ingreso de las mujeres con respecto al de los hombres es de más de 10 años.
                 \end{itemize}
-    
+     
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+
+
+
     \subsection{Ingreso Laboral}
  %%%% Include figures
     \begin{figure}[H]
-    \caption[Percentil 25 del ingreso laboral por ciudades principales - 2019]{\label{map_result_2}}
+    \caption[Percentil 25 del ingreso laboral por ciudades principales - 2019]{\label{ingreso_laboral_25_ciudades}}
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_2_static.png}
         \end{center}
@@ -23,7 +39,7 @@
 
  %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral por ciudades principales para minorías - 2020 \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral por ciudades principales para minorías - 2020]{\label{ingreso_laboral_25_ciudades_minorias} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_1_static.png}
         \end{center}
@@ -36,7 +52,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral por ciudades principales - 2010 VS 2019 \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral por ciudades principales - 2010 VS 2019 ]{\label{ingreso_laboral_25_ciudades_VS} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_2_scatter_time.png}
         \end{center}
@@ -48,7 +64,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral por género \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral por género]{ \label{ingreso_laboral_25_genero} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_4_trend.png}
         \end{center}
@@ -59,9 +75,21 @@
                     \item El ingreso venía disminuyendo desde el 2018, y se incentiva más en el 2020 con el Covid. Esto también de ve en el ámbito nacional.
                 \end{itemize}
 
+ %%%% Include figures
+    \begin{figure}[H]
+    \caption[Percentil 50 del ingreso laboral por ciudades principales - 2019]{\label{ingreso_laboral_50_ciudades}}
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_25605_static.png}
+        \end{center}
+    \end{figure}
+            \begin{itemize}
+                    \item El ingreso laboral para el percentil 50 está por encima de los 2 millones en las principales ciudades.
+                    \item Entre la ciudad de mayor y menor ingreso laboral en el percentil 50 hay una diferencia de 800 mil pesos aproximadamente (Bogotá - Cúcuta).
+                \end{itemize}
+
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 50 del ingreso laboral por ciudades principales para minorías - 2020 \label{map_result_2} }
+        \caption[Percentil 50 del ingreso laboral por ciudades principales para minorías - 2020]{ \label{ingreso_laboral_50_ciudades_minoria} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_14_static.png}
         \end{center}
@@ -74,7 +102,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 50 del ingreso laboral por género \label{map_result_2} }
+        \caption[Percentil 50 del ingreso laboral por género]{ \label{ingreso_laboral_50_genero} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_16_trend.png}
         \end{center}
@@ -88,7 +116,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 75 del ingreso laboral por ciudades principales para minorías - 2020 \label{map_result_2} }
+        \caption[Percentil 75 del ingreso laboral por ciudades principales para minorías - 2020]{\label{ingreso_laboral_75_ciudades_minorias} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_24_static.png}
         \end{center}
@@ -101,7 +129,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 75 del ingreso laboral por género \label{map_result_2} }
+        \caption[Percentil 75 del ingreso laboral por género ]{\label{ingreso_laboral_75_genero} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_26_trend.png}
         \end{center}
@@ -114,7 +142,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 75 del ingreso laboral nacional \label{map_result_2} }
+        \caption[Percentil 75 del ingreso laboral nacional ]{\label{ingreso_laboral_75_nacional} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_27_trend.png}
         \end{center}
@@ -125,12 +153,38 @@
                 \end{itemize}
 
 \section{Pobreza}
+
+    \begin{figure}[H]
+        \caption[Indicador Pulso Social sobre Pobreza (PCA)]{\label{pca_pobreza} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{pca_clusters/pca_pobreza_pca.png}
+        \end{center}
+    \end{figure}
+
+ %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+                    \begin{itemize}
+                    \item Pero hay una brecha de género enorme, especialmente en los percentiles más bajos de ingreso.
+                    \item El rezago en el ingreso de las mujeres con respecto al de los hombres es de más de 10 años.
+                \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+
     \subsection{Pobreza Monetaria}
+
         \subsubsection{Población por Clase Social}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Pobres (2012 VS 2020) por ciudad \label{map_result_2} }
+        \caption[Población por clase social - Pobres (2012 VS 2020) por ciudad ]{\label{pobres_ciudad_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_241_scatter_time.png}
         \end{center}
@@ -147,7 +201,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Pobres a nivel nacional \label{map_result_2} }
+        \caption[Población por clase social - Pobres a nivel nacional ]{\label{pobres_nacional} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_242_trend.png}
         \end{center}
@@ -159,7 +213,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Pobres por zonas \label{map_result_2} }
+        \caption[Población por clase social - Pobres por zonas ]{\label{pobres_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_243_trend.png}
         \end{center}
@@ -172,7 +226,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Vulnerables (2012 VS 2020) por ciudad \label{map_result_2} }
+        \caption[Población por clase social - Vulnerables (2012 VS 2020) por ciudad ]{\label{vulnerables_ciudades_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_244_scatter_time.png}
         \end{center}
@@ -187,7 +241,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Vulnerables a nivel nacional \label{map_result_2} }
+        \caption[Población por clase social - Vulnerables a nivel nacional ]{\label{vulnerables_nacional} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_245_trend.png}
         \end{center}
@@ -200,7 +254,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Vulnerables por zonas \label{map_result_2} }
+        \caption[Población por clase social - Vulnerables por zonas ]{\label{vulnerables_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_246_trend.png}
         \end{center}
@@ -213,7 +267,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Clase media (2012 VS 2020) por ciudades \label{map_result_2} }
+        \caption[Población por clase social - Clase media (2012 VS 2020) por ciudades ]{\label{clase_media_ciudades_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_247_scatter_time.png}
         \end{center}
@@ -227,7 +281,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Clase media a nivel nacional \label{map_result_2} }
+        \caption[Población por clase social - Clase media a nivel nacional ]{\label{clase_media_nacional} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_248_trend.png}
         \end{center}
@@ -241,7 +295,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Clase media por zonas \label{map_result_2} }
+        \caption[Población por clase social - Clase media por zonas ]{\label{clase_media_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_249_trend.png}
         \end{center}
@@ -254,7 +308,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Clase alta (2012 VS 2020) por ciudad \label{map_result_2} }
+        \caption[Población por clase social - Clase alta (2012 VS 2020) por ciudad ]{\label{clase_alta_ciudades_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_250_scatter_time.png}
         \end{center}
@@ -269,7 +323,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Clase alta a nivel nacional \label{map_result_2} }
+        \caption[Población por clase social - Clase alta a nivel nacional ]{\label{clase_alta_nacional} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_251_trend.png}
         \end{center}
@@ -282,7 +336,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Población por clase social - Clase alta por zonas \label{map_result_2} }
+        \caption[Población por clase social - Clase alta por zonas ]{\label{clase_alta_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_252_trend.png}
         \end{center}
@@ -296,7 +350,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pobreza extrema por ciudades - 2012 VS 2020 \label{map_result_2} }
+        \caption[Pobreza extrema por ciudades - 2012 VS 2020 ]{\label{pobreza_extrema_ciudades_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_257_scatter_time.png}
         \end{center}
@@ -311,7 +365,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pobreza extrema por departamentos - 2012 VS 2020 \label{map_result_2} }
+        \caption[Pobreza extrema por departamentos - 2012 VS 2020 ]{\label{pobreza_extrema_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_258_scatter_time.png}
         \end{center}
@@ -325,7 +379,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pobreza extrema por departamentos - Cambio porcentual entre 2012 y 2020 \label{map_result_2} }
+        \caption[Pobreza extrema por departamentos - Cambio porcentual entre 2012 y 2020 ]{\label{pobreza_extrema_dptos_cambio} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_258_map_change.png}
         \end{center}
@@ -337,7 +391,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pobreza extrema por zonas y nacional \label{map_result_2} }
+        \caption[Pobreza extrema por zonas y nacional ]{\label{pobreza_extrema_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_260_trend.png}
         \end{center}
@@ -353,7 +407,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pobreza monetaria por ciudades - 2012 VS 2020 \label{map_result_2} }
+        \caption[Pobreza monetaria por ciudades - 2012 VS 2020 ]{\label{pobreza_monetaria_ciudades_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_261_scatter_time.png}
         \end{center}
@@ -367,7 +421,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pobreza monetaria por departamentos - 2012 VS 2020 \label{map_result_2} }
+        \caption[Pobreza monetaria por departamentos - 2012 VS 2020 ]{\label{pobreza_monetaria_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_262_scatter_time.png}
         \end{center}
@@ -381,7 +435,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pobreza monetaria por departamentos - Cambio porcentual entre 2012 y 2020 \label{map_result_2} }
+        \caption[Pobreza monetaria por departamentos - Cambio porcentual entre 2012 y 2020 ]{\label{pobreza_monetaria_dptos_cambio} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_262_map_change.png}
         \end{center}
@@ -393,7 +447,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pobreza monetaria por zonas y nacional \label{map_result_2} }
+        \caption[Pobreza monetaria por zonas y nacional ]{\label{pobreza_monetaria_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_264_trend.png}
         \end{center}
@@ -413,7 +467,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Índice de Pobreza Multidimensional - Cambio porcentual entre 2018 y 2020 \label{map_result_2} }
+        \caption[Índice de Pobreza Multidimensional por departamentos- Cambio porcentual entre 2018 y 2020 ]{\label{ipm_dptos_cambio} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_268_map_change.png}
         \end{center}
@@ -425,7 +479,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Índice de Pobreza Multidimensional por departamentos para el 2020 \label{map_result_2} }
+        \caption[Índice de Pobreza Multidimensional por departamentos para el 2020 ]{\label{ipm_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_268_static.png}
         \end{center}
@@ -438,7 +492,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Índice de Pobreza Multidimensional por regiones - 2010 VS 2020 \label{map_result_2} }
+        \caption[Índice de Pobreza Multidimensional por regiones - 2010 VS 2020 ]{\label{ipm_regiones_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_270_scatter_time.png}
         \end{center}
@@ -451,7 +505,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Índice de Pobreza Multidimensional por zonas y nacional \label{map_result_2} }
+        \caption[Índice de Pobreza Multidimensional por zonas y nacional ]{\label{ipm_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_270_scatter_time.png}
         \end{center}
@@ -467,7 +521,7 @@
         
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Necesidades Básicas Insatisfechas - Minorías VS no minorías \label{map_result_2} }
+        \caption[Necesidades Básicas Insatisfechas - Minorías VS no minorías ]{\label{nbi_minorias_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_272_scatter.png}
         \end{center}
@@ -481,7 +535,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Necesidades Básicas Insatisfechas para minorías y no minorías en el 2018 \label{map_result_2} }
+        \caption[Necesidades Básicas Insatisfechas para minorías y no minorías en el 2018 ]{\label{nbi_minorias} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_272_static.png}
         \end{center}
@@ -494,7 +548,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Necesidades Básicas Insatisfechas por departamentos para el 2018 \label{map_result_2} }
+        \caption[Necesidades Básicas Insatisfechas por departamentos para el 2018 (mapa) ]{\label{nbi_dptos_mapa} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_273_map.png}
         \end{center}
@@ -507,7 +561,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Necesidades Básicas Insatisfechas por departamentos para 2018 \label{map_result_2} }
+        \caption[Necesidades Básicas Insatisfechas por departamentos para 2018 ]{\label{nbi_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_273_static.png}
         \end{center}
@@ -519,7 +573,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Necesidades Básicas Insatisfechas por zonas y nacional \label{map_result_2} }
+        \caption[Necesidades Básicas Insatisfechas por zonas y nacional ]{\label{nbi_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_276_static.png}
         \end{center}
@@ -530,12 +584,38 @@
                     \end{itemize}
 
 \section{Desigualdad}
+
+\begin{figure}[H]
+        \caption[Indicador Pulso Social sobre Desigualdad (PCA)]{\label{pca_pobreza} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{pca_clusters/pca_desigualdad_pca.png}
+        \end{center}
+    \end{figure}
+
+ %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+                    \begin{itemize}
+                    \item Pero hay una brecha de género enorme, especialmente en los percentiles más bajos de ingreso.
+                    \item El rezago en el ingreso de las mujeres con respecto al de los hombres es de más de 10 años.
+                \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+    
+    
     \subsection{Indicadores Convencionales}
         \subsubsection{Coeficiente de Gini}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Coeficiente de Gini por ciudades \label{map_result_2} }
+        \caption[Coeficiente de Gini por ciudades - 2002 VS 2020 ]{\label{gini_ciudades_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_253_scatter_time.png}
         \end{center}
@@ -549,7 +629,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Coeficiente de Gini por departamentos \label{map_result_2} }
+        \caption[Coeficiente de Gini por departamentos - 2002 VS 2020 ]{\label{gini_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_254_scatter_time.png}
         \end{center}
@@ -563,7 +643,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Coeficiente de Gini por zonas y nacional \label{map_result_2} }
+        \caption[Coeficiente de Gini por zonas y nacional ]{\label{gini_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_256_trend.png}
         \end{center}
@@ -576,12 +656,38 @@
                     \end{itemize}
 
 \section{Características de las Viviendas}
+
+\begin{figure}[H]
+        \caption[Indicador Pulso Social sobre Características de la Vivienda (PCA)]{\label{pca_pobreza} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{pca_clusters/pca_caracteristicas_de_las_viviendas_pca.png}
+        \end{center}
+    \end{figure}
+
+ %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+                    \begin{itemize}
+                    \item Pero hay una brecha de género enorme, especialmente en los percentiles más bajos de ingreso.
+                    \item El rezago en el ingreso de las mujeres con respecto al de los hombres es de más de 10 años.
+                \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+    
+    
     \subsection{Calidad de los Materiales}
         \subsubsection{Material de la Pared}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con pared de ladrillo por departamentos para 2020 \label{map_result_2} }
+        \caption[Viviendas con pared de ladrillo por departamentos para 2020 ]{\label{pared_ladrillo_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_150_static.png}
         \end{center}
@@ -594,7 +700,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con pared de ladrillo por zonas \label{map_result_2} }
+        \caption[Viviendas con pared de ladrillo por zonas ]{\label{pared_ladrillo_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_151_trend.png}
         \end{center}
@@ -606,7 +712,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con pared de madera por departamentos para 2020 \label{map_result_2} }
+        \caption[Viviendas con pared de madera por departamentos para 2020 ]{\label{pared_madera_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_160_static.png}
         \end{center}
@@ -619,7 +725,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con pared de madera por zonas \label{map_result_2} }
+        \caption[Viviendas con pared de madera por zonas ]{\label{pared_madera_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_161_trend.png}
         \end{center}
@@ -631,7 +737,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con pared de bahareque revocado por departamentos para 2020 \label{map_result_2} }
+        \caption[Viviendas con pared de bahareque revocado por departamentos para 2020 ]{\label{pared_bahareque_revo_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_154_static.png}
         \end{center}
@@ -643,7 +749,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con pared de bahareque revocado por zonas \label{map_result_2} }
+        \caption[Viviendas con pared de bahareque revocado por zonas ]{\label{pared_bahareque_revo_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_155_trend.png}
         \end{center}
@@ -655,7 +761,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con pared de bahareque no revocado por departamentos para 2020 \label{map_result_2} }
+        \caption[Viviendas con pared de bahareque no revocado por departamentos para 2020 ]{\label{pared_bahareque_no_revo_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_152_static.png}
         \end{center}
@@ -667,7 +773,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con pared de bahareque no revocado por zonas \label{map_result_2} }
+        \caption[Viviendas con pared de bahareque no revocado por zonas ]{\label{pared_bahareque_no_revo_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_153_trend.png}
         \end{center}
@@ -679,7 +785,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con pared de latas desechables por departamentos para 2020 \label{map_result_2} }
+        \caption[Viviendas con pared de latas desechables por departamentos para 2020 ]{\label{pared_latas_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_158_static.png}
         \end{center}
@@ -693,7 +799,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de baldosa por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Viviendas con piso de baldosa por departamentos - 2010 VS 2020 ]{\label{piso_baldosa_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_173_scatter_time.png}
         \end{center}
@@ -706,7 +812,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de baldosa por departamento para 2020 \label{map_result_2} }
+        \caption[Viviendas con piso de baldosa por departamento para 2020 ]{\label{piso_baldosa_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_173_static.png}
         \end{center}
@@ -719,7 +825,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de baldosa por zonas \label{map_result_2} }
+        \caption[Viviendas con piso de baldosa por zonas ]{\label{piso_baldosa_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_174_trend.png}
         \end{center}
@@ -731,7 +837,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de cemento por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Viviendas con piso de cemento por departamentos - 2010 VS 2020 ]{\label{piso_cemento_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_177_scatter_time.png}
         \end{center}
@@ -744,7 +850,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de cemento por departamentos para 2020 \label{map_result_2} }
+        \caption[Viviendas con piso de cemento por departamentos para 2020 ]{\label{piso_cemento_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_177_static.png}    
         \end{center}
@@ -758,7 +864,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de cemento por zonas \label{map_result_2} }
+        \caption[Viviendas con piso de cemento por zonas ]{\label{piso_cemento_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_178_trend.png}
         \end{center}
@@ -770,7 +876,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de tierra por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Viviendas con piso de tierra por departamentos - 2010 VS 2020 ]{\label{piso_tierra_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_179_scatter_time.png}
         \end{center}
@@ -783,7 +889,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de tierra por departamentos para 2020 \label{map_result_2} }
+        \caption[Viviendas con piso de tierra por departamentos para 2020 ]{\label{piso_tierra_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_179_static.png}
         \end{center}
@@ -796,7 +902,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de tierra por zonas \label{map_result_2} }
+        \caption[Viviendas con piso de tierra por zonas ]{\label{piso_tierra_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_180_trend.png}
         \end{center}
@@ -809,7 +915,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de madera burda por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Viviendas con piso de madera burda por departamentos - 2010 VS 2020 ]{\label{piso_madera_burda_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_175_scatter_time.png}
         \end{center}
@@ -823,7 +929,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de madera burda por departamentos para 2020 \label{map_result_2} }
+        \caption[Viviendas con piso de madera burda por departamentos para 2020 ]{\label{piso_madera_burda_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_175_static.png}
         \end{center}
@@ -836,7 +942,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Viviendas con piso de madera burda por zonas \label{map_result_2} }
+        \caption[Viviendas con piso de madera burda por zonas ]{\label{piso_madera_burda_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_176_trend.png}
         \end{center}
@@ -850,7 +956,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Hacinamiento por departamentos - Cambio porcentual entre 2018 y 2020 \label{map_result_2} }
+        \caption[Hacinamiento por departamentos - Cambio porcentual entre 2018 y 2020 ]{\label{hacinamiento_dptos_cambio} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_265_map_change.png}
         \end{center}
@@ -862,7 +968,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Hacinamiento por departamentos para 2020 \label{map_result_2} }
+        \caption[Hacinamiento por departamentos para 2020 ]{\label{hacinamiento_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_265_static.png}
         \end{center}
@@ -876,7 +982,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Hacinamiento por zonas y nacional \label{map_result_2} }
+        \caption[Hacinamiento por zonas y nacional ]{\label{hacinamiento_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_267_trend.png}
         \end{center}
@@ -888,11 +994,37 @@
                     \end{itemize}
 
 \section{Acceso a servicios de agua potable y saneamiento}
+
+\begin{figure}[H]
+        \caption[Indicador Pulso Social sobre Acceso a servicios de agua potabla y saneamiento (PCA)]{\label{pca_pobreza} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{pca_clusters/pca_acceso_a_servicio_de_agua_potable_y_saneamiento_pca.png}
+        \end{center}
+    \end{figure}
+
+ %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+                    \begin{itemize}
+                    \item Pero hay una brecha de género enorme, especialmente en los percentiles más bajos de ingreso.
+                    \item El rezago en el ingreso de las mujeres con respecto al de los hombres es de más de 10 años.
+                \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+    
+    
     \subsection{Agua Potable}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Acueducto público como fuentes de agua por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Acueducto público como fuentes de agua por departamentos - 2010 VS 2020 ]{\label{cueducto_publico_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_129_scatter_time.png}
         \end{center}
@@ -905,7 +1037,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Acueducto público como fuentes de agua por departamentos para 2020 \label{map_result_2} }
+        \caption[Acueducto público como fuentes de agua por departamentos para 2020 ]{\label{cueducto_publico_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_129_static.png}
         \end{center}
@@ -918,7 +1050,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Acueducto público como fuentes de agua por zonas \label{map_result_2} }
+        \caption[Acueducto público como fuentes de agua por zonas ]{\label{cueducto_publico_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_130_trend.png}
         \end{center}
@@ -930,7 +1062,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Acueducto comunal como fuentes de agua por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Acueducto comunal como fuentes de agua por departamentos - 2010 VS 2020 ]{\label{cueducto_comunal_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_133_scatter_time.png}
         \end{center}
@@ -942,7 +1074,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Acueducto comunal como fuentes de agua por departamentos para 2020 \label{map_result_2} }
+        \caption[Acueducto comunal como fuentes de agua por departamentos para 2020 ]{\label{cueducto_comunal_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_133_static.png}
         \end{center}
@@ -955,7 +1087,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Acueducto comunal como fuentes de agua por zonas \label{map_result_2} }
+        \caption[Acueducto comunal como fuentes de agua por zonas ]{\label{cueducto_comunal_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_134_trend.png}
         \end{center}
@@ -967,7 +1099,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Río o quebradas como fuentes de agua por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Río o quebradas como fuentes de agua por departamentos - 2010 VS 2020 ]{\label{rio_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_142_scatter_time.png}
         \end{center}
@@ -979,7 +1111,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Río o quebradas como fuentes de agua por departamentos para 2020 \label{map_result_2} }
+        \caption[Río o quebradas como fuentes de agua por departamentos para 2020 ]{\label{rio_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_141_static.png}
         \end{center}
@@ -991,7 +1123,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Río o quebradas como fuentes de agua por zonas \label{map_result_2} }
+        \caption[Río o quebradas como fuentes de agua por zonas ]{\label{rio_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_142_trend.png}
         \end{center}
@@ -1004,7 +1136,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pozo con bomba como fuentes de agua por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Pozo con bomba como fuentes de agua por departamentos - 2010 VS 2020 ]{\label{pozo_bomba_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_135_scatter_time.png}
         \end{center}
@@ -1016,7 +1148,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pozo con bomba como fuentes de agua por departamentos para 2020 \label{map_result_2} }
+        \caption[Pozo con bomba como fuentes de agua por departamentos para 2020 ]{\label{pozo_bomba_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_135_static.png}
         \end{center}
@@ -1029,7 +1161,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pozo con bomba como fuentes de agua por zonas \label{map_result_2} }
+        \caption[Pozo con bomba como fuentes de agua por zonas ]{\label{pozo_bomba_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_136_trend.png}
         \end{center}
@@ -1041,7 +1173,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agua lluvia como fuentes de agua por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Agua lluvia como fuentes de agua por departamentos - 2010 VS 2020 ]{\label{agua_lluvia_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_139_scatter_time.png}
         \end{center}
@@ -1053,7 +1185,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agua lluvia como fuentes de agua por departamentos para 2020 \label{map_result_2} }
+        \caption[Agua lluvia como fuentes de agua por departamentos para 2020 ]{\label{agua_lluvia_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_139_static.png}
         \end{center}
@@ -1066,7 +1198,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agua lluvia como fuentes de agua por zonas \label{map_result_2} }
+        \caption[Agua lluvia como fuentes de agua por zonas ]{\label{agua_lluvia_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_140_trend.png}
         \end{center}
@@ -1079,7 +1211,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Pozo sin bomba como fuentes de agua por departamentos para 2020 \label{map_result_2} }
+        \caption[Pozo sin bomba como fuentes de agua por departamentos para 2020 ]{\label{pozo_no_bomba_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_137_static.png}
         \end{center}
@@ -1091,7 +1223,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agua en botella o bolsa como fuentes de agua por departamentos para 2020 \label{map_result_2} }
+        \caption[Agua en botella o bolsa como fuentes de agua por departamentos para 2020 ]{\label{agua_botella_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_143_static.png}
         \end{center}
@@ -1103,7 +1235,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Carrotanque como fuentes de agua por departamentos para 2020 \label{map_result_2} }
+        \caption[Carrotanque como fuentes de agua por departamentos para 2020 ]{\label{carrotanque_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_147_static.png}
         \end{center}
@@ -1116,7 +1248,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saneamiento dentro de la vivienda por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Saneamiento dentro de la vivienda por departamentos - 2010 VS 2020 ]{\label{saneamiento_dentro_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_193_scatter_time.png}
         \end{center}
@@ -1129,7 +1261,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saneamiento dentro de la vivienda por departamentos (mapa) - 2010 VS 2020 \label{map_result_2} }
+        \caption[Saneamiento dentro de la vivienda por departamentos (mapa) - 2010 VS 2020 ]{\label{saneamiento_dentro_dptos_mapa} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_193_map.png}
         \end{center}
@@ -1141,7 +1273,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saneamiento dentro de la vivienda por departamentos para 2020 \label{map_result_2} }
+        \caption[Saneamiento dentro de la vivienda por departamentos para 2020 ]{\label{saneamiento_dentro_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_193_static.png}
         \end{center}
@@ -1153,7 +1285,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saneamiento dentro de la vivienda por zonas \label{map_result_2} }
+        \caption[Saneamiento dentro de la vivienda por zonas ]{\label{saneamiento_dentro_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_194_trend.png}
         \end{center}
@@ -1165,7 +1297,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saneamiento fuera de la vivienda por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Saneamiento fuera de la vivienda por departamentos - 2010 VS 2020 ]{\label{saneamiento_fuera_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_195_scatter_time.png}
         \end{center}
@@ -1178,7 +1310,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saneamiento fuera de la vivienda por departamentos (mapa) - 2010 VS 2020 \label{map_result_2} }
+        \caption[Saneamiento fuera de la vivienda por departamentos (mapa) - 2010 VS 2020 ]{\label{saneamiento_fuera_mapa} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_195_map.png}
         \end{center}
@@ -1190,7 +1322,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saneamiento fuera de la vivienda por departamentos para 2020 \label{map_result_2} }
+        \caption[Saneamiento fuera de la vivienda por departamentos para 2020 ]{\label{saneamiento_fuera_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_195_static.png}
         \end{center}
@@ -1203,7 +1335,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saneamiento fuera de la vivienda por zonas \label{map_result_2} }
+        \caption[Saneamiento fuera de la vivienda por zonas ]{\label{saneamiento_fuera_zonas} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_196_trend.png}
         \end{center}
@@ -1214,12 +1346,38 @@
                     \end{itemize}
 
 \section{Crecimiento Económico y Productivo}
+
+\begin{figure}[H]
+        \caption[Indicador Pulso Social sobre Crecimiento Económico y Productivo]{\label{pca_pobreza} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{pca_clusters/pca_crecimiento_economico_y_productivo_pca.png}
+        \end{center}
+    \end{figure}
+
+ %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+                    \begin{itemize}
+                    \item Pero hay una brecha de género enorme, especialmente en los percentiles más bajos de ingreso.
+                    \item El rezago en el ingreso de las mujeres con respecto al de los hombres es de más de 10 años.
+                \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+    
+    
     \subsection{Indicadores Convencionales}
         \subsubsection{Índice de diversidad económica}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Índice de diversidad económica por departamentos (mapa) - 2010 VS 2020 \label{map_result_2} }
+        \caption[Índice de diversidad económica por departamentos (mapa) - 2010 VS 2020 ]{\label{diversidad_econ_dptos_mapa} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_300_map.png}
         \end{center}
@@ -1234,7 +1392,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Índice de diversidad económica por departamentos para 2020 \label{map_result_2} }
+        \caption[Índice de diversidad económica por departamentos para 2020 ]{\label{diversidad_econ_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_300_static.png}
         \end{center}
@@ -1247,7 +1405,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Establecimientos por departamentos - Cambio porcentual entre 2009 y 2019 \label{map_result_2} }
+        \caption[Establecimientos por departamentos - Cambio porcentual entre 2009 y 2019 ]{\label{establecimientos_dptos_cambio} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_217_map_change.png}
         \end{center}
@@ -1260,7 +1418,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Establecimientos a nivel nacional \label{map_result_2} }
+        \caption[Establecimientos a nivel nacional ]{\label{establecimientos_nacional} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_218_trend.png}
         \end{center}
@@ -1274,7 +1432,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Personal promedio por empresa por departamentos - 2009 VS 2019 \label{map_result_2} }
+        \caption[Personal promedio por empresa por departamentos - 2009 VS 2019 ]{\label{personal_promedio_dptos_vs} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_220_scatter_time.png}
         \end{center}
@@ -1286,7 +1444,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Personal promedio por empresa a nivel nacional \label{map_result_2} }
+        \caption[Personal promedio por empresa a nivel nacional ]{\label{personal_promedio_nacional} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_221_trend.png}
         \end{center}
@@ -1300,7 +1458,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Producción bruta por departamentos (mapa) - 2009 VS 2019 \label{map_result_2} }
+        \caption[Producción bruta por departamentos (mapa) - 2009 VS 2019 ]{\label{prod_bruta_dptos_mapa} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_223_map.png}
         \end{center}
@@ -1312,7 +1470,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Producción bruta a nivel nacional \label{map_result_2} }
+        \caption[Producción bruta a nivel nacional ]{\label{prod_bruta_nacional} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_224_trend.png}
         \end{center}
@@ -1325,7 +1483,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Valor agregado por departamentos (mapa) - 2009 VS 2019 \label{map_result_2} }
+        \caption[Valor agregado por departamentos (mapa) - 2009 VS 2019 ]{\label{valor_agreg_dptos_mapa} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_226_map.png}
         \end{center}
@@ -1338,7 +1496,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Valor agregado a nivel nacional \label{map_result_2} }
+        \caption[Valor agregado a nivel nacional ]{\label{valor_agreg_nacional} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_227_trend.png}
         \end{center}
@@ -1352,7 +1510,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Logaritmo de la intensidad lumínica promedio por departamentos (mapa) - 2012 VS 2020 \label{map_result_2} }
+        \caption[Logaritmo de la intensidad lumínica promedio por departamentos (mapa) - 2012 VS 2020 ]{\label{log_lumicidad_dptos_mapa} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_301_map.png}
         \end{center}
@@ -1365,7 +1523,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Logaritmo de la intensidad lumínica promedio por departamentos para 2020 \label{map_result_2} }
+        \caption[Logaritmo de la intensidad lumínica promedio por departamentos para 2020 ]{\label{log_lumicidad_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_301_static.png}
         \end{center}
@@ -1376,21 +1534,37 @@
 
 \section{Migración}
 
-%%%% Include figures
-    \begin{figure}[H]
-        \caption{Saldos de entradas y salidas a nivel nacional \label{map_result_2} }
-        \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_240_trend.png}
-        \end{center}
-    \end{figure}
+ %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
             \begin{itemize}
                     \item En general los saldos migratorios han sido negativos, es decir se han presentado más salidas que entradas al país.
                     \item Hubo un aumento de las entradas entre 2012 y 2017, siendo este último el pico más alto, desde entonces tuvo una caída hasta llegar a niveles similares para el 2019 a los registrados en el 2012.
                     \end{itemize}
 
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+    
+    
+
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saldos de entradas y salidas a nivel nacional por grupo etéreo \label{map_result_2} }
+        \caption[Saldos de entradas y salidas a nivel nacional ]{\label{saldos_nacional} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_240_trend.png}
+        \end{center}
+    \end{figure}
+
+%%%% Include figures
+    \begin{figure}[H]
+        \caption[Saldos de entradas y salidas a nivel nacional por grupo etéreo ]{\label{saldos_edad} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_238_trend.png}
         \end{center}
@@ -1404,7 +1578,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Saldos de entradas y salidas a nivel nacional de colombianos y extranjeros \label{map_result_2} }
+        \caption[Saldos de entradas y salidas a nivel nacional de colombianos y extranjeros ]{\label{saldos_nacionalidad} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_237_trend.png}
         \end{center}
@@ -1417,18 +1591,68 @@
 
 \section{Vulnerabilidad Climática}
 
+
+ %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+            \begin{itemize}
+                    \item El impacto del cambio climático tendrá efectos diferenciados en las regiones del país.
+                    \item Las regiones costeras serán las más impactadas.
+            \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+    
+
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Área vulnerable al cambio climático por departamentos \label{map_result_2} }
+        \caption[Área vulnerable al cambio climático por departamentos ]{\label{cambio_climatico_dptos} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_299_map.png}
         \end{center}
     \end{figure}
-            \begin{itemize}
-                    \item El impacto del cambio climático tendrá efectos diferenciados en las regiones del país.
-                    \item Las regiones costeras serán las más impactadas.
-                    \end{itemize}
+
 
 \section{Estructura Demográfica}
 
+ %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+            \begin{itemize}
+                    \item El impacto del cambio climático tendrá efectos diferenciados en las regiones del país.
+                    \item Las regiones costeras serán las más impactadas.
+            \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+
 \section{Covid - 19}
+
+ %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+            \begin{itemize}
+                    \item El impacto del cambio climático tendrá efectos diferenciados en las regiones del país.
+                    \item Las regiones costeras serán las más impactadas.
+            \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
