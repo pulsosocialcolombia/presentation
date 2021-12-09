@@ -1,10 +1,95 @@
 
 \section{Infancia y Niñez}
+
+        La dimensión de Infancia y Niñez está compuesta por 17 variables, que consisten en asistencia escolar entre menores de 5 años (total y por quintiles), asistencia a primaria, mortalidad infantil y tamaño de clase escolar. La Tabla X muestra las variables que componen esta dimensión, e incluye sus estadísticas descriptivas.
+        
+        El índice de Infancia y niñez se construyó utilizando el valor de éstas 17 variables en 2020. Específicamente, el índice es el primer componente principal que recopila el 30\% de la varianza de los datos (Gráfica Y). Como muestra la Gráfica Z en el Anexo, las variables de asistencia escolar de menores de 5 años (agregado y por quintiles) son las que mayor peso tienen en este componente principal, contribuyendo cada una entre un 10 y 15\% al índice. Otras variables como la asistencia a primaria, la mortalidad infantil y el tamaño de clase tienen un peso por debajo del 6\%.
+        
+        La Figura \ref{pca_infancia_y_ninez} muestra los clusters de departamentos formados por este indicador. Los departamentos ubicados al noroeste del país (incluyendo a Bogotá) conforman el cluster con índices más altos. Esto se debe a que estos departamentos tienen las tasas más altas de asistencia escolar en menores de 5 años, como se describe en la siguiente sección.  
+        
+        \begin{figure}[H]
+        \caption[Indicador Pulso Social sobre Infancia y Niñez]{\label{pca_infancia_y_ninez} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{pca_clusters/pca_infancia_y_ninez_pca.png}
+        \end{center}
+    \end{figure}
+    
+    
+   %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+            \begin{itemize}
+                    \item Resultado 1 
+                    \item Resultado 2
+            \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+        
+        A continuación describimos las tendencias en las variables que más explican la varianza en el índice de infancia y niñez entre regiones.  
+        
+    \subsection{Asistencia escolar de menores de 5 años}
+
+        La siguiente gráfica  muestra la asistencia preescolar de menores de 5 años por zonas, y revela que la asistencia en zonas urbanas es casi el doble que en las zonas rurales. Hasta el 2020, ésta brecha se había mantenido constante. Sin embargo, con la pandemia la asistencia en  zonas urbanas cayó mucho más que en las zonas rurales (de 40 a 25\% vs. 24 a 20\%), cerrando la brecha significativamente.
+
+    \begin{figure}[H]
+        \caption[Asistencia escolar de menores de 5 años por zonas]{\label{asist5_zona_scatter} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_100_trend.png}
+        \end{center}
+    \end{figure}
+ 
+        La asistencia de niños en edad pre-escolar es muy heterogénea entre departamentos.  La siguiente gráfica, que muestra las tasas de asistencia por departamento en 2010 y 2020, revela que en departamentos como Casanare  menos del 3\% de los menores de 5 años asiste a un establecimiento educativo, comparado con un 43\% en La Guajira. 
+        
+        Entre 2010 y 2020, casi todos los departamentos sufrieron caídas significativas en las tasas de asistencia preescolar (i.e. se ubican por debajo de la diagonal) y algunos de estos departamentos cambiaron significativamente sus posiciones relativas. Atlántico, por ejemplo, pasó de ocupar en 2010 el puesto más alto en términos de asistencia escolar de menores de 5 años (51\%) a ocupar el puesto \#27 en 2020 (27\%).     
+
+    \begin{figure}[H]
+        \caption[Asistencia escolar de menores de 5 años por departamentos - 2010 VS 2020 ]{\label{asist5_dpto_scatter} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_99_scatter_time.png}
+        \end{center}
+    \end{figure}
+
+        Las brechas por quintil de ingreso en la asistencia preescolar varían por departamento. Como muestran las siguientes gráficas, algunos departamentos como Bolívar y Sucre, tienen altas tasas de asistencia preescolar tanto en el quintil más alto, como el más bajo (entre 41\% y 47\%). Sin embargo, en otros departamentos hay grandes brechas. En Putumayo, por ejemplo, el 32\% de los niños en el quintil 5 (Figura \ref{asist5_q5_dpto_static}) de ingreso asisten a un establecimiento educativo, comparado con sólo un 7\% en el quintil 1 (Figura \ref{asist5_q1_dpto_static}). 
+
+    \begin{figure}[H]
+        \caption[Asistencia escolar de menores de 5 años para el primer quintil de ingreso por departamentos para 2020 ]{\label{asist5_q1_dpto_static} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_101_static.png}
+        \end{center}
+    \end{figure}
+
+    \begin{figure}[H]
+        \caption[Asistencia escolar de menores de 5 años para el último quintil de ingreso]{\label{asist5_q5_dpto_static} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_109_static.png}
+        \end{center}
+    \end{figure}
+
+    \subsection{Asistencia escolar primaria}
+
+        PENDIENTE - Asistencia escolar a educación primaria
+
     \subsection{Mortalidad Infantil}
+
+        La tasa de mortalidad infantil en Colombia ha disminuido ligeramente en los últimos 10 años, pasando de 13 fallecidos por cada 1.000 nacidos vivos en 2010, a 10 fallecidos en 2020 (Figura \ref{mortinf_nal_trend}). Pero existe gran heterogeneidad regional. Como muestra la Figura \ref{mortinf_dpto_scatter}, .   
+
+    \begin{figure}[H]
+        \caption[Tasa de mortalidad infantil a nivel nacional ]{\label{mortinf_nal_trend} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_291_trend.png}
+        \end{center}
+    \end{figure}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de mortalidad infantil por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Tasa de mortalidad infantil por departamentos - 2010 VS 2020 ]{\label{mortinf_dpto_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_290_scatter_time.png}
         \end{center}
@@ -18,7 +103,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de mortalidad infantil por departamentos para 2020 \label{map_result_2} }
+        \caption[Tasa de mortalidad infantil por departamentos para 2020 ]{\label{mortinf_dpto_static} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_290_static.png}
         \end{center}
@@ -26,113 +111,21 @@
             \begin{itemize}
                     \item Los países con menor tasa de mortalidad infantil se concentran en el centro del país, mientras que los de mayor son aquellos históricamente vulnerables en la periferia.
                     \item En Boyacá fallecen 6.5 niños menores de 1 año por cada mil nacidos vivos, siendo el dpto con menor tasa, por otro lado Vichada es el de mayor, siendo casi 4 veces Boyacá (24.1\%).
+                    \item En Colombia coexisten regiones con tasas de mortalidad infantil similares a las de Sur Africa (24\%, Vichada) y a las de Estados Unidos (6\%, Boyacá)
                     \end{itemize}
 
-%%%% Include figures
-    \begin{figure}[H]
-        \caption{Tasa de mortalidad infantil a nivel nacional \label{map_result_2} }
-        \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_291_trend.png}
-        \end{center}
-    \end{figure}
-            \begin{itemize}
-                    \item La tasa a nivel nacional ha ido disminuyendo en los últimos 10 años.
-                    \item Vemos dos picos leves en 2016 y 2018-2019, pero para 2020 se evidencia una caída abrupta compensando el retroceso del 2018-2019.
-                \end{itemize}
 
-    \subsection{Asistencia escolar, preescolar y primaria}
-        \subsubsection{PENDIENTE - Asistencia escolar de menores de 5 años}
 
-%%%% Include figures
-    \begin{figure}[H]
-        \caption{Asistencia escolar de menores de 5 años por departamentos - 2010 VS 2020 \label{map_result_2} }
-        \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_99_scatter_time.png}
-        \end{center}
-    \end{figure}
-            \begin{itemize}
-                \item Solo Sucre, Magdalena, La Guajira y Norte tienen niveles superiores para 2020 comparados con los del 2010, el resto de dptos desmejoraron en estos diez años.
-                \item Atlántico, Santander, Boyacá, Putumayo y Amazonas son los dptos que tuvieron la mayor desmejora (disminución del más del 52\% según la gráfica map change 99)
-                \item Atlántico pasó de ser el de mayor cobertura en 2010, teniendo una diferencia cercana a 10\% con el segundo mejor, con más del 50\% a estar por debajo de 30\%.
-                \end{itemize}
 
-%%%% Include figures
-    \begin{figure}[H]
-        \caption{Asistencia escolar de menores de 5 años por departamentos para 2020 \label{map_result_2} }
-        \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_99_static.png}
-        \end{center}
-    \end{figure}
-            \begin{itemize}
-                \item Hay una gran heterogeneidad entre los territorios, yendo desde un menos de un 3\% hasta cerca del 50\%.
-                \item Mientras que en Vichada solo el 2.1\% de los menores de 5 año asisten a algún centro educativo, en La Guajira son el 43.3\%, teniendo una diferencia de cerca del 40\%.
-                \item La concentración de los territorios con menor cobertura en 2020 se encuentran en la zona amazónica y oriental del país (gráfica map 99).
-                \end{itemize}
 
-%%%% Include figures
-    \begin{figure}[H]
-        \caption{Asistencia escolar de menores de 5 años por zonas \label{map_result_2} }
-        \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_100_trend.png}
-        \end{center}
-    \end{figure}
-            \begin{itemize}
-                \item La asistencia escolar de menores de 5 años en zonas urbanas es casi el doble que en las rurales.
-                \item La brecha se había mantenido en el tiempo hasta el 2020, donde disminuyó significativamente.
-                \item En 2020 se observó una caída en la asistencia en la zonas urbanas, llevando a presentar valores cercanos a los rurales en el año anterior. La zona rural también presentó una disminución pero no tan abrupta.
-                \item Ambas zonas presentan porcentajes de asistencia menores para 2020 que los presentados en 2010, siendo aún más la diferencia en la zona urbana.
-                \end{itemize}
 
-%%%% Include figures
-    \begin{figure}[H]
-        \caption{Asistencia escolar de menores de 5 años para el primer quintil de ingreso por departamentos - 2010 VS 2020 \label{map_result_2} }
-        \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_101_scatter_time.png}
-        \end{center}
-    \end{figure}
-            \begin{itemize}
-                \item Los dptos se concentran especialmente por debajo del 30\% de niños menores de 5 años asistiendo a un centro educativo en el primel quintil de ingresos.
-                \item Gran parte de los dptos desmejoraron para 2020 la asistencia escolar de menores de 5 comparados con la información registrada para 2010.
-                \item Valle, Tolima y Magdalena presentan son de los pocos dptos que presentaron mejoras en estos 10 años en el grupo de menor ingreso.
-                \item Amazonas pasó de haber presentado una asistencia del 100\% en 2010 y ser el de mayor asistencia, a ser de los de menor asistencia con alrededor de un 10\%.
-                \item San Andrés, Nariño, Meta y Cundinamarca se han mantenido en los niveles similares de hace 10 años.
-                \end{itemize}
-
-%%%% Include figures
-    \begin{figure}[H]
-        \caption{Asistencia escolar de menores de 5 años para el primer quintil de ingreso por departamentos para 2020 \label{map_result_2} }
-        \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_101_static.png}
-        \end{center}
-    \end{figure}
-            \begin{itemize}
-                \item Distribución heterogénea de los valores, abarcando desde el 3\% hasta cerca del 40\%.
-                \item Mientras en el Quindío el porcentaje de menores de 5 que asisten a un centro educativo es de 1.9\%, el Chocó es de 48.7\% para el quintil de menor ingreso.
-                \item Los dptos con menor asistencia escolar de menores de 5 se encuentran en la zona amazónica y oriental.
-                \end{itemize}
-
-%%%% Include figures
-    \begin{figure}[H]
-        \caption{Asistencia escolar de menores de 5 años para el primer quintil de ingreso por zonas \label{map_result_2} }
-        \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_102_trend.png}
-        \end{center}
-    \end{figure}
-            \begin{itemize}
-                \item En el primer quintil de ingreso se ve que la asistencia escolar en menores de 5 años es mayor en las cabeceras, casi siendo el doble de las zonas rurales.
-                \item En las cabeceras se evidenciaba un aumento en la asistencia escolar hasta el 2017, donde inicia a decaer, especialmente en 2020 donde es bastante pronunciada, estando en los niveles más bajos desde el 2010.
-                \item En el caso de las zonas rurales esta se mantuvo estables entre 2016 y 2019 decayendo para 2020 y teniendo menor asistencia a la registrada en 2010.
-                \item La brecha entre las zonas se mantuvo hasta 2020, donde esta disminuyó a una diferencias alrededor del 10\%.
-                \end{itemize}
-
-        \subsubsection{PENDIENTE - Asistencia escolar a educación primaria}
         
     \subsection{Calidad de la educación}
         \subsubsection{Tamaño de clase en primaria}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tamaño de clase en primaria por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Tamaño de clase en primaria por departamentos - 2010 VS 2020 ]{\label{tamano_primaria_dpto_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_228_scatter_time.png}
         \end{center}
@@ -145,7 +138,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tamaño de clase en primaria por departamentos para 2020 \label{map_result_2} }
+        \caption[Tamaño de clase en primaria por departamentos para 2020 ]{\label{tamano_primaria_dpto_static} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_228_static.png}
         \end{center}
@@ -158,7 +151,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tamaño de clase en primaria a nivel nacional \label{map_result_2} }
+        \caption[Tamaño de clase en primaria a nivel nacional ]{\label{tamano_primaria_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_229_trend.png}
         \end{center}
@@ -170,11 +163,38 @@
                 \end{itemize}
 
 \section{Juventud}
+
+\begin{figure}[H]
+        \caption[Indicador Pulso Social sobre Juventud]{\label{pca_juvented} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{pca_clusters/pca_juventud_pca.png}
+        \end{center}
+    \end{figure}
+    
+    
+   %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+            \begin{itemize}
+                    \item Resultado 1 
+                    \item Resultado 2
+            \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+
+
     \subsection{Educación superior}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Jóvenes de 18 a 28 años que han asistido a una institución de educación superior por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Jóvenes de 18 a 28 años que han asistido a una institución de educación superior por departamentos - 2010 VS 2020 ]{\label{asist_edusup_dpto_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_127_scatter_time.png}
         \end{center}
@@ -186,7 +206,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Jóvenes de 18 a 28 años que han asistido a una institución de educación superior por departamentos para 2020 \label{map_result_2} }
+        \caption[Jóvenes de 18 a 28 años que han asistido a una institución de educación superior por departamentos para 2020 ]{\label{asist_edusup_dpto_static} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_127_static.png}
         \end{center}
@@ -199,7 +219,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Jóvenes de 18 a 28 años que han asistido a una institución de educación superior por zonas \label{map_result_2} }
+        \caption[Jóvenes de 18 a 28 años que han asistido a una institución de educación superior por zonas ]{\label{asist_edusup_zona_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_128_trend.png}
         \end{center}
@@ -211,11 +231,38 @@
                 \end{itemize}
 
     \subsection{Calidad de la educación}
-        \subsubsection{PENDIENTE - Tamaño de clase en secundaria y media}
+        \subsubsection{Tamaño de clase en secundaria y media}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tamaño de clase en secundaria y media a nivel nacional \label{map_result_2} }
+        \caption[Tamaño de clase en secundaria y media por departamentos - 2014 VS 2020 ]{\label{temano_sec_dpto_scatter} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_230_scatter_time.png}
+        \end{center}
+    \end{figure}
+            \begin{itemize}
+                \item Solo alrededor de 7 dptos muestran desmejoras en el tamaño de la clase para 2020 con respecto al 2014
+                \item Atlántico, Guainía y Guaviare son los dptos donde hubo la mayores desmejoras en el tamaño de las clases de secundaria y media.
+                \item Valle, Casanare y Cesar mantuvieron para 2020 tamaños de clase similares a los del 2014.
+                \item Quindío es de los dptos que más mejoró en el tamaño de clase.
+                \item El Guaviare se mantiene como el dpto con menor tamaño de clase, pero aun así aumentó y perdió la diferencia que tenía contra los otros en 2014.
+                \end{itemize}
+
+%%%% Include figures
+    \begin{figure}[H]
+        \caption[Tamaño de clase en secundaria y media por departamentos para 2020 ]{\label{temano_sec_dpto_static} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_230_static.png}
+        \end{center}
+    \end{figure}
+            \begin{itemize}
+                \item En general no hay mucha heterogeneidad entre los dptos, todos mantienen niveles entre 14 y 24\%.
+                \item La diferencia entre el de mayor y menor tamaño de clase en secundaria y media es de menos del 10\% (Cesar - Guaviare)
+                \end{itemize}
+
+%%%% Include figures
+    \begin{figure}[H]
+        \caption[Tamaño de clase en secundaria y media a nivel nacional ]{\label{temano_sec_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_231_trend.png}
         \end{center}
@@ -229,7 +276,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de fecundidad en mujeres jóvenes por departamentos - 2010 VS 2019 \label{map_result_2} }
+        \caption[Tasa de fecundidad en mujeres jóvenes por departamentos - 2010 VS 2019 ]{\label{fecundjov_dpto_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_282_scatter_time.png}
         \end{center}
@@ -242,7 +289,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de fecundidad en mujeres jóvenes por departamentos para 2019 \label{map_result_2} }
+        \caption[Tasa de fecundidad en mujeres jóvenes por departamentos para 2019 ]{\label{fecundjov_dpto_static} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_282_static.png}
         \end{center}
@@ -254,7 +301,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de fecundidad en mujeres jóvenes a nivel nacional \label{map_result_2} }
+        \caption[Tasa de fecundidad en mujeres jóvenes a nivel nacional ]{\label{fecundjov_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_283_trend.png}
         \end{center}
@@ -268,7 +315,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Porcentaje de jóvenes que no estudian, ni trabajan a nivel nacional \label{map_result_2} }
+        \caption[Porcentaje de jóvenes que no estudian, ni trabajan a nivel nacional ]{\label{ninijov_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_42_trend.png}
         \end{center}
@@ -280,7 +327,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Porcentaje de jóvenes que no estudian, ni trabajan por género \label{map_result_2} }
+        \caption[Porcentaje de jóvenes que no estudian, ni trabajan por género ]{\label{ninijov_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_41_trend.png}
         \end{center}
@@ -293,7 +340,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Porcentaje de jóvenes que no estudian, ni trabajan por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Porcentaje de jóvenes que no estudian, ni trabajan por minorías y no minorías para 2020 ]{\label{ninijov_minoria_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_40_scatter.png}
         \end{center}
@@ -307,7 +354,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo joven a nivel nacional \label{map_result_2} }
+        \caption[Tasa de desempleo joven a nivel nacional ]{\label{desempjov_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_56_trend.png}
         \end{center}
@@ -319,7 +366,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo joven por género \label{map_result_2} }
+        \caption[Tasa de desempleo joven por género ]{\label{desempjov_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_55_trend.png}
         \end{center}
@@ -332,7 +379,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo joven por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Tasa de desempleo joven por minorías y no minorías para 2020 ]{\label{desempjov_minoria_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_54_scatter.png}
         \end{center}
@@ -345,7 +392,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa global de participación entre jóvenes a nivel nacional \label{map_result_2} }
+        \caption[Tasa global de participación entre jóvenes a nivel nacional ]{\label{particjov_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_86_trend.png}
         \end{center}
@@ -357,7 +404,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa global de participación entre jóvenes por género \label{map_result_2} }
+        \caption[Tasa global de participación entre jóvenes por género ]{\label{particjov_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_85_trend.png}
         \end{center}
@@ -370,9 +417,9 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa global de participación entre jóvenes por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Tasa global de participación entre jóvenes por minorías y no minorías para 2020 ]{\label{particjov_minoria_scatter} }
         \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_84_static.png}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_84_scatter.png}
         \end{center}
     \end{figure}
             \begin{itemize}
@@ -384,7 +431,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de formalidad entre jóvenes a nivel nacional \label{map_result_2} }
+        \caption[Tasa de formalidad entre jóvenes a nivel nacional ]{\label{formaljov_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_66_trend.png}
         \end{center}
@@ -396,7 +443,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de formalidad entre jóvenes por género \label{map_result_2} }
+        \caption[Tasa de formalidad entre jóvenes por género ]{\label{formaljov_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_65_trend.png}
         \end{center}
@@ -409,7 +456,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de formalidad entre jóvenes por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Tasa de formalidad entre jóvenes por minorías y no minorías para 2020 ]{\label{formaljov_minoria_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_64_scatter.png}
         \end{center}
@@ -422,7 +469,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de informalidad entre jóvenes a nivel nacional \label{map_result_2} }
+        \caption[Tasa de informalidad entre jóvenes a nivel nacional ]{\label{informaljov_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_76_trend.png}
         \end{center}
@@ -434,7 +481,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de informalidad entre jóvenes por género \label{map_result_2} }
+        \caption[Tasa de informalidad entre jóvenes por género ]{\label{informaljov__gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_75_trend.png}
         \end{center}
@@ -446,7 +493,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de informalidad entre jóvenes por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Tasa de informalidad entre jóvenes por minorías y no minorías para 2020 ]{\label{informaljov_minoria_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_74_scatter.png}
         \end{center}
@@ -459,7 +506,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral de los jóvenes a nivel nacional \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral de los jóvenes a nivel nacional ]{\label{inglab25jov_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_13_trend.png}
         \end{center}
@@ -470,7 +517,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral de los jóvenes por género \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral de los jóvenes por género ]{\label{inglab25jov_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_12_trend.png}
         \end{center}
@@ -482,7 +529,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral de los jóvenes por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral de los jóvenes por minorías y no minorías para 2020 ]{\label{inglab25jov_minoria_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_11_scatter.png}
         \end{center}
@@ -493,7 +540,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 50 del ingreso laboral de los jóvenes a nivel nacional \label{map_result_2} }
+        \caption[Percentil 50 del ingreso laboral de los jóvenes a nivel nacional ]{\label{inglab50jov_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_23_trend.png}
         \end{center}
@@ -505,7 +552,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 50 del ingreso laboral de los jóvenes por género \label{map_result_2} }
+        \caption[Percentil 50 del ingreso laboral de los jóvenes por género ]{\label{inglab50jov_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_22_trend.png}
         \end{center}
@@ -517,7 +564,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 50 del ingreso laboral de los jóvenes por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Percentil 50 del ingreso laboral de los jóvenes por minorías y no minorías para 2020 ]{\label{inglab50jov_minoria_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_21_scatter.png}
         \end{center}
@@ -528,7 +575,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 75 del ingreso laboral de los jóvenes a nivel nacional \label{map_result_2} }
+        \caption[Percentil 75 del ingreso laboral de los jóvenes a nivel nacional ]{\label{inglab75jov_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_33_trend.png}
         \end{center}
@@ -540,7 +587,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 75 del ingreso laboral de los jóvenes por género \label{map_result_2} }
+        \caption[Percentil 75 del ingreso laboral de los jóvenes por género ]{\label{inglab75jov_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_32_trend.png}
         \end{center}
@@ -552,7 +599,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 75 del ingreso laboral de los jóvenes por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Percentil 75 del ingreso laboral de los jóvenes por minorías y no minorías para 2020 ]{\label{inglab75jov_minoria_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_31_scatter.png}
         \end{center}
@@ -562,12 +609,39 @@
                 \end{itemize}
 
 \section{Adultez}
+
+\begin{figure}[H]
+        \caption[Indicador Pulso Social sobre Adultez]{\label{pca_pobreza} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{pca_clusters/pca_adultez_pca.png}
+        \end{center}
+    \end{figure}
+    
+    
+   %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+            \begin{itemize}
+                    \item Resultado 1 
+                    \item Resultado 2
+            \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+    
+    
     \subsection{Desempleo}
         \subsubsection{Personas que no estudian ni trabajan}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Personas que no estudian ni trabajan a nivel nacional \label{map_result_2} }
+        \caption[Personas que no estudian ni trabajan a nivel nacional ]{\label{nini_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_36_trend.png}
         \end{center}
@@ -579,7 +653,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Personas que no estudian ni trabajan por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Personas que no estudian ni trabajan por minorías y no minorías para 2020 ]{\label{nini_minoria_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_34_scatter.png}
         \end{center}
@@ -592,7 +666,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo por ciudades - 2010 VS 2020 \label{map_result_2} }
+        \caption[Tasa de desempleo por ciudades - 2010 VS 2020 ]{\label{desemp_ciudad_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_45_scatter_time.png}
         \end{center}
@@ -606,7 +680,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo por ciudades por género para 2020 \label{map_result_2} }
+        \caption[Tasa de desempleo por ciudades por género para 2020 ]{\label{desemp_gen_ciudad_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_44_scatter.png}
         \end{center}
@@ -618,7 +692,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo por ciudades por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Tasa de desempleo por ciudades por minorías y no minorías para 2020 ]{\label{desemp_minoria_ciudad_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_43_scatter.png}
         \end{center}
@@ -630,7 +704,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Tasa de desempleo por departamentos - 2010 VS 2020 ]{\label{desemp_dpto_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_47_scatter_time.png}
         \end{center}
@@ -643,7 +717,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo por departamentos para 2020 \label{map_result_2} }
+        \caption[Tasa de desempleo por departamentos para 2020 ]{\label{desemp_dpto_static} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_47_static.png}
         \end{center}
@@ -655,7 +729,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo a nivel nacional \label{map_result_2} }
+        \caption[Tasa de desempleo a nivel nacional ]{\label{desemp_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_50_trend.png}
         \end{center}
@@ -667,7 +741,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de desempleo por género \label{map_result_2} }
+        \caption[Tasa de desempleo por género ]{\label{desemp_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_49_trend.png}
         \end{center}
@@ -682,7 +756,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de formalidad por ciudades por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Tasa de formalidad por ciudades por minorías y no minorías para 2020 ]{\label{formal_minoria_ciudad_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_57_scatter.png}
         \end{center}
@@ -695,7 +769,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de formalidad por ciudades a nivel nacional \label{map_result_2} }
+        \caption[Tasa de formalidad por ciudades a nivel nacional ]{\label{formal_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_60_trend.png}
         \end{center}
@@ -707,7 +781,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de formalidad por género \label{map_result_2} }
+        \caption[Tasa de formalidad por género ]{\label{formal_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_59_trend.png}
         \end{center}
@@ -721,7 +795,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de informalidad por ciudades por minorías y no minorías para 2020 \label{map_result_2} }
+        \caption[Tasa de informalidad por ciudades por minorías y no minorías para 2020 ]{\label{informal_minoria_ciudad_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_67_scatter.png}
         \end{center}
@@ -734,7 +808,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de informalidad a nivel nacional \label{map_result_2} }
+        \caption[Tasa de informalidad a nivel nacional ]{\label{informal_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_70_trend.png}
         \end{center}
@@ -746,7 +820,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa de informalidad a nivel nacional \label{map_result_2} }
+        \caption[Tasa de informalidad por género ]{\label{informal_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_69_trend.png}
         \end{center}
@@ -761,7 +835,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral de los adultos a nivel nacional \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral de los adultos a nivel nacional ]{\label{inglab25adu_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_10_trend.png}
         \end{center}
@@ -773,7 +847,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral de los adultos por género \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral de los adultos por género ]{\label{inglab25adu_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_9_trend.png}
         \end{center}
@@ -785,7 +859,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral de los adultos por ciudades - 2010 VS 2019 \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral de los adultos por ciudades - 2010 VS 2019 ]{\label{inglab25adu_ciudad_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_7_scatter_time.png}
         \end{center}
@@ -798,7 +872,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 25 del ingreso laboral de los adultos por ciudades por género para 2019 \label{map_result_2} }
+        \caption[Percentil 25 del ingreso laboral de los adultos por ciudades por género para 2019 ]{\label{inglab25adu_gen_ciudad_static} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_6_static.png}
         \end{center}
@@ -810,7 +884,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 50 del ingreso laboral de los adultos a nivel nacional \label{map_result_2} }
+        \caption[Percentil 50 del ingreso laboral de los adultos a nivel nacional ]{\label{inglab50adu_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_20_trend.png}
         \end{center}
@@ -822,7 +896,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 50 del ingreso laboral de los adultos por género \label{map_result_2} }
+        \caption[Percentil 50 del ingreso laboral de los adultos por género ]{\label{inglab50adu_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_19_trend.png}
         \end{center}
@@ -834,7 +908,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 75 del ingreso laboral de los adultos a nivel nacional \label{map_result_2} }
+        \caption[Percentil 75 del ingreso laboral de los adultos a nivel nacional ]{\label{inglab75adu_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_30_trend.png}
         \end{center}
@@ -845,7 +919,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Percentil 75 del ingreso laboral de los adultos por género \label{map_result_2} }
+        \caption[Percentil 75 del ingreso laboral de los adultos por género ]{\label{inglab75adu_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_29_trend.png}
         \end{center}
@@ -859,7 +933,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa global de participación de los adultos a nivel nacional \label{map_result_2} }
+        \caption[Tasa global de participación de los adultos a nivel nacional ]{\label{particadu_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_83_trend.png}
         \end{center}
@@ -871,7 +945,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa global de participación de los adultos por género \label{map_result_2} }
+        \caption[Tasa global de participación de los adultos por género ]{\label{particadu_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_82_trend.png}
         \end{center}
@@ -883,7 +957,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa global de participación a nivel nacional \label{map_result_2} }
+        \caption[Tasa global de participación a nivel nacional ]{\label{partic_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_80_trend.png}
         \end{center}
@@ -894,7 +968,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa global de participación por género/ \label{map_result_2} }
+        \caption[Tasa global de participación por género/ ]{\label{partic_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_79_trend.png}
         \end{center}
@@ -905,9 +979,9 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Tasa global de participación por ciudades por minorías y no minorías \label{map_result_2} }
+        \caption[Tasa global de participación por ciudades por minorías y no minorías ]{\label{partic_minoria_ciudad_scatter} }
         \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_80_trend.png}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_77_scatter.png}
         \end{center}
     \end{figure}
             \begin{itemize}
@@ -920,7 +994,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Diferencia en los años de educación promedio entre indígenas y no indígenas para 2020 \label{map_result_2} }
+        \caption[Diferencia en los años de educación promedio entre indígenas y no indígenas por departamentos para 2020 ]{\label{difeducmin_dpto_static} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_123_static.png}
         \end{center}
@@ -933,7 +1007,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Diferencia en los años de educación promedio entre indígenas y no indígenas por zonas \label{map_result_2} }
+        \caption[Diferencia en los años de educación promedio entre indígenas y no indígenas por zonas ]{\label{difeducmin_zona_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_124_trend.png}
         \end{center}
@@ -947,7 +1021,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agresiones (homicidios) por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Agresiones (homicidios) por departamentos - 2010 VS 2020 ]{\label{homicid_dpto_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_286_scatter_time.png}
         \end{center}
@@ -960,7 +1034,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agresiones (homicidios) por departamentos (mapa) - 2010 VS 2020 \label{map_result_2} }
+        \caption[Agresiones (homicidios) por departamentos (mapa) - 2010 VS 2020 ]{\label{homicid_dpto_map} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_286_map.png}
         \end{center}
@@ -972,7 +1046,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agresiones (homicidios) por departamentos para 2020 \label{map_result_2} }
+        \caption[Agresiones (homicidios) por departamentos para 2020 ]{\label{homicid_dpto_static} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_286_static.png}
         \end{center}
@@ -983,7 +1057,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agresiones (homicidios) a nivel nacional \label{map_result_2} }
+        \caption[Agresiones (homicidios) a nivel nacional ]{\label{homicid_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_289_trend.png}
         \end{center}
@@ -995,7 +1069,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agresiones (homicidios) por rango de edad \label{map_result_2} }
+        \caption[Agresiones (homicidios) por rango de edad ]{\label{homicid_edad_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_287_trend.png}
         \end{center}
@@ -1008,7 +1082,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Agresiones (homicidios) por género \label{map_result_2} }
+        \caption[Agresiones (homicidios) por género ]{\label{homicid_gen_map} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_286_map.png}
         \end{center}
@@ -1022,7 +1096,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Lesiones autoinfligidas intencionalmente (suicidios) por departamentos - 2010 VS 2020 \label{map_result_2} }
+        \caption[Lesiones autoinfligidas intencionalmente (suicidios) por departamentos - 2010 VS 2020 ]{\label{suicid_dpto_scatter} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_294_scatter_time.png}
         \end{center}
@@ -1035,7 +1109,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Lesiones autoinfligidas intencionalmente (suicidios) por departamentos (mapa) - 2010 VS 2020 \label{map_result_2} }
+        \caption[Lesiones autoinfligidas intencionalmente (suicidios) por departamentos (mapa) - 2010 VS 2020 ]{\label{suicid_dpto_map} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_294_map.png}
         \end{center}
@@ -1047,9 +1121,9 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Lesiones autoinfligidas intencionalmente (suicidios) por departamentos por género \label{map_result_2} }
+        \caption[Lesiones autoinfligidas intencionalmente (suicidios) por departamentos por género ]{\label{suicid_dpto_gen_scatter} }
         \begin{center}
-        \includegraphics[width=\textwidth,keepaspectratio]{img/var_293_scatter_time.png}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_293_scatter.png}
         \end{center}
     \end{figure}
             \begin{itemize}
@@ -1059,7 +1133,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Lesiones autoinfligidas intencionalmente (suicidios) a nivel nacional \label{map_result_2} }
+        \caption[Lesiones autoinfligidas intencionalmente (suicidios) a nivel nacional ]{\label{suicid_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_297_trend.png}
         \end{center}
@@ -1071,7 +1145,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Lesiones autoinfligidas intencionalmente (suicidios) por género \label{map_result_2} }
+        \caption[Lesiones autoinfligidas intencionalmente (suicidios) por género ]{\label{suicid_gen_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_296_trend.png}
         \end{center}
@@ -1084,7 +1158,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Lesiones autoinfligidas intencionalmente (suicidios) por grupos de edad \label{map_result_2} }
+        \caption[Lesiones autoinfligidas intencionalmente (suicidios) por grupos de edad ]{\label{suicid_edad_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_295_trend.png}
         \end{center}
@@ -1095,12 +1169,39 @@
                 \end{itemize}
 
 \section{Vejez}
+
+\begin{figure}[H]
+        \caption[Indicador Pulso Social sobre Vejez]{\label{pca_pobreza} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{pca_clusters/pca_vejez_pca.png}
+        \end{center}
+    \end{figure}
+    
+    
+   %%%%---------------------
+    %%% Principales resultados
+    %%%%---------------------
+    \begin{tcolorbox}[enhanced, colback=mycolor,colframe=mycolor,drop fuzzy shadow,watermark color=white,
+                        %%% Título
+                        title=Principales Resultados]
+    
+            \begin{itemize}
+                    \item Resultado 1 
+                    \item Resultado 2
+            \end{itemize}
+     
+    \end{tcolorbox}
+    %%%%---------------------
+    %%%%---------------------
+    %%%%---------------------
+    
+    
     \subsection{Enfermedades no transmisibles y obesidad}
-        \subsubsection{REVISAR SECCIÓN Defunciones prematuras}
+        \subsubsection{Defunciones prematuras}
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Defunciones prematuras a nivel nacional \label{map_result_2} }
+        \caption[Defunciones prematuras a nivel nacional ]{\label{defprem_nal_trend} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_281_trend.png}
         \end{center}
@@ -1111,7 +1212,7 @@
 
 %%%% Include figures
     \begin{figure}[H]
-        \caption{Defunciones prematuras por departamento - Cambio porcentual entre 2010 y 2020 \label{map_result_2} }
+        \caption[Defunciones prematuras por departamento - Cambio porcentual entre 2010 y 2020 ]{\label{defprem_dpto_map_change} }
         \begin{center}
         \includegraphics[width=\textwidth,keepaspectratio]{img/var_280_map_change.png}
         \end{center}
@@ -1120,3 +1221,20 @@
                 \item En la parte central y sur del país se encuentran los dptos donde más disminuyó las muertes prematuras.
                 \item En la zona oriental se encuentran los dptos con el mayor aumento en las defunciones prematuras.
                 \end{itemize}
+
+        \subsubsection{TERMINAR - Defunciones por enfermedades no transmisibles}
+
+%%%% Include figures
+    \begin{figure}[H]
+        \caption[Defunciones por enfermedades no transmisibles ]{\label{ent_} }
+        \begin{center}
+        \includegraphics[width=\textwidth,keepaspectratio]{img/var_280_map_change.png}
+        \end{center}
+    \end{figure}
+            \begin{itemize}
+                \item 
+                \item 
+                \end{itemize}
+
+
+
